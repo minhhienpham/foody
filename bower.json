@@ -1,0 +1,18 @@
+{
+  "name": "foody",
+  "description": "",
+  "main": "js/admin.js",
+  "license": "MIT",
+  "homepage": "https://github.com/AT-PHPIntership/foody",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "adminbsb-materialdesign": "^1.0.5"
+  }
+}

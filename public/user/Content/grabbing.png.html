@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="index, follow, all" />
+    <meta name="p:domain_verify" content="73eb0f0e066e6b151806fd693a1fbf35" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <title>Trang kh&#244;ng t&#236;m thấy</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" media="all" type="text/css" />
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
+
+    <link href="site.css" rel="stylesheet"/>
+
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+
+    <link href="jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="owl.carousel.css" rel="stylesheet" />
+    <link href="Responsive.css" rel="stylesheet" />
+    
+    
+	
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+            d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+                z.set.
+                _.push(o)
+            }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
+            $.src = "https://v2.zopim.com/?59bxSWoiJHvPJxV09F9EDXKSynWwx46A"; z.t = +new Date; $.
+            type = "text/javascript"; e.parentNode.insertBefore($, e)
+        })(document, "script");
+    </script>
+    <!--End of Zendesk Chat Script-->
+    
+    <!-- Chặn nội dung chữ trong bài viết  
+    <script type="text/JavaScript">
+        function killCopy(e)
+        {
+            return false;
+        }
+        function reEnable()
+        {
+            return true;
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar)
+        {
+            document.onmousedown = killCopy;
+            document.onclick = reEnable;
+        }
+    </script>
+   -->
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TQ2T2H9');</script>
+	<!-- End Google Tag Manager -->
+    
+    
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ2T2H9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->	
+    <div id="fb-root"></div>
+	<script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=1650169558572376";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+	</script>
+    <div class="body-mark modal fade in">
+        <div class="modal-backdrop fade in">
+            <div id="loader-wrapper">
+                <div id="loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container wrapper distance-none header-top-wrapper">
+            <section class="header-top">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../Files/Images/logo-flyfood-2017.png" alt="FlyFood" />
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="form-group input-group distance-none">
+                        <input id="txtsearchFull" type="text" class="form-control" placeholder="Từ khóa tìm kiếm...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="Search('/Home/Error');">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="right header-info">
+                    <ul class="list-inline">
+                        
+                        <li>
+                            <img src="../Files/Images/hotro.png">
+                            <h2>Tổng đài đặt hàng</h2>
+                            <p>Vui lòng gọi: (028)39.911.911</p>
+                        </li>
+                        <li>
+                            <img src="../Files/Images/vanchuyen.png">
+                            <h2>Khu vực giao hàng</h2>
+                            <p>Đơn hàng từ 1000k - Miễn phí giao hàng</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+        <div class="header-line container distance-none full">
+            <div class="container wrapper">
+                <ul class="menu-right list-inline right distance-none">
+                        <li class="login" onclick="LoginPopup();">
+                            <i class="fa fa-sign-in"></i>Đăng nhập
+                        </li>
+                        <li class="singin" onclick="SinginPopup();">
+                            <i class="fa fa-edit"></i>Đăng ký
+                        </li>
+                    <li class="shopping-cart" id="shopping-cart">
+                        
+
+<i class="fa fa-shopping-cart"></i>
+   <span class="shopping-cart-show"> Giỏ hàng (0)</span>
+<script>
+    $('.shopping-cart-show').click(function () {
+        $('.box-cart').toggleClass("active");
+    });
+    $('.thugon-cart').click(function () {
+        $('.box-cart').toggleClass("active");
+    });
+</script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="header-bottom container-fluid">
+            <div class="container distance-none wrapper">
+                <div class="menu-top">
+                    <i style="font-size:20px;" class="fa fa-navicon"></i><a class="danhmuc" style="color:#fff;" href="../san-pham.html"><span>Chọn danh mục sản phẩm</span></a>
+                    <div class="list-menu">
+                        <ul class="list-inline">
+                                        <li>
+                                            <a href="../thuc-don-mon-ga-sp-a49b241015103551773.html">Thực đơn m&#243;n g&#224;</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-mon-lau-sp-caff241015103610505.html">Thực đơn m&#243;n lẩu</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-mon-bo-heo-de-sp-bc74040516113328973.html">Thực đơn m&#243;n B&#242;, Heo, D&#234;</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-mon-khai-vi-sp-acb1241115180300482.html">Thực đơn m&#243;n khai vị</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-mon-sup-sp-29a4290816095253904.html">Thực đơn m&#243;n s&#250;p</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-mon-goi-sp-87cc290816095207553.html">Thực đơn m&#243;n gỏi</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-mon-ca-sp-1170241015103603808.html">Thực đơn m&#243;n c&#225;</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thuc-don-gia-re-sp-4ad4140418114644336.html">THỰC ĐƠN GI&#193; RẺ</a>
+                                        </li>
+                                <li>
+                                    <a href="../thuc-don-tiec-nho-nhanh.html">Thực đơn tiệc nhanh</a>
+                                </li>
+                                <li>
+                                    <a href="../thuc-don-mon-tiec-tron-goi.html">Tiệc trọn gói</a>
+                                </li>
+                                <li>
+                                    <a href="../bang-gia-cap-nhat-tat-ca-cac-mon-an-tiec-tai-flyfood-detail-830629061616161182.html">Bảng giá món ăn</a>
+                                </li>
+                                <li>
+                                    <a href="../thong-tin-lien-he.html">Liên hệ</a>
+                                </li>
+                                <li class="show-menu" onclick="showmenu(this);">
+                                    <span class="fa fa-angle-double-down"></span>
+                                    <a href="grabbing.png.html#">Tin tức - Sự kiện</a>
+                                    <ul class="list-inline">
+                                                    <li>
+                                                        <a href="../tin-tuc-flyfood-news-6d67291015091916974.html">Tin tức FlyFood</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../goc-su-kien-news-5063291015091911202.html">G&#243;c Sự kiện</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../goc-am-thuc-news-8288291015091904494.html">G&#243;c ẩm thực</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../goc-bao-chi-news-0916291015091858129.html">G&#243;c b&#225;o ch&#237;</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../tuyen-dung-news-cd11291015091853152.html">Tuyển dụng</a>
+                                                    </li>
+
+                                        <li>
+                                            <a href="../goc-cam-nhan.html">Góc cảm nhận</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="show-menu" onclick="showmenu(this);">
+                                    <span class="fa fa-angle-double-down"></span>
+                                    <a href="grabbing.png.html#">Chính sách - Điều khoản</a>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="../khu-vuc-giao-hang-detail-195a011115171657805.html">Khu vực giao hàng</a>
+                                        </li>
+                                        <li>
+                                            <a href="../quy-trinh-huong-dan-dat-hang-online-tai-flyfoodvn-detail-81d1180116115450489.html">Hướng dẫn mua hàng</a>
+                                        </li>
+                                        <li>
+                                            <a href="../dieu-khoan-su-dung-website-flyfood-detail-28cf180116111951153.html">Điều khoản sử dụng</a>
+                                        </li>
+                                        <li>
+                                            <a href="../chinh-sach-bao-mat-flyfood-detail-4ed3180116110956315.html">Chính sách bảo mật</a>
+                                        </li>
+                                        <li>
+                                            <a href="../nhan-dien-thuong-hieu-flyfood-detail-86ef180116110049580.html">Nhận diện thương hiệu</a>
+                                        </li>
+                                        
+                                    </ul>
+
+
+                                </li>
+                                <li class="show-menu" onclick="showmenu(this);">
+                                    <span class="fa fa-angle-double-down"></span>
+                                    <a href="grabbing.png.html#">Tài khoản - Đơn hàng</a>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="../thong-tin-tai-khoan.html">Thông tin tài khoản</a>
+                                        </li>
+                                        <li>
+                                            <a href="../thong-tin-don-hang.html">Thông tin đơn hàng</a>
+                                        </li>
+                                    </ul>
+
+
+                                </li>
+
+                        </ul>
+                    </div>
+                    <div class="search-mobile">
+                        <div class="form-group input-group distance-none">
+                            <input id="txtsearchMobile" type="text" class="form-control" placeholder="Từ khóa tìm kiếm...">
+                            <span class="input-group-btn">
+                                <button style="margin-top:-11px;" class="btn btn-default" type="button" onclick="Search('/Home/Error');">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <ul class="menu list-inline left distance-none">
+                    <li>
+                        <a href="../Home/Index.html"><i style="font-size:20px;" class="fa fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="../gioi-thieu.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-tiec-nho-nhanh.html">Món ăn mỗi ngày</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-tiec-tron-goi.html">Tiệc trọn gói</a>
+                    </li>
+                    <li>
+                        <a href="../tin-tuc-flyfood.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="../khu-vuc-giao-hang-detail-195a011115171657805.html">Khu vực giao hàng</a>
+                    </li>
+                    <li>
+                        <a href="../thong-tin-lien-he.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </header>
+    <div class="container wrapper distance-none header-responsive">
+        
+    <div class="list-menu home-menu">
+        <ul class="list-inline">
+                    <li>
+                        <a href="../flyfood-take-away-sp-2755180717151245702.html">FLYFOOD TAKE AWAY</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-ga-sp-a49b241015103551773.html">Thực đơn m&#243;n g&#224;</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-lau-sp-caff241015103610505.html">Thực đơn m&#243;n lẩu</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-bo-heo-de-sp-bc74040516113328973.html">Thực đơn m&#243;n B&#242;, Heo, D&#234;</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-khai-vi-sp-acb1241115180300482.html">Thực đơn m&#243;n khai vị</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-sup-sp-29a4290816095253904.html">Thực đơn m&#243;n s&#250;p</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-goi-sp-87cc290816095207553.html">Thực đơn m&#243;n gỏi</a>
+                    </li>
+                    <li>
+                        <a href="../mon-khai-vi-sp-dd55270516210010982.html">M&#243;n khai vị</a>
+                    </li>
+                    <li>
+                        <a href="../cac-mon-goi-sp-b225020616162606591.html">C&#225;c m&#243;n gỏi</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-ca-sp-1170241015103603808.html">Thực đơn m&#243;n c&#225;</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-gia-re-sp-4ad4140418114644336.html">THỰC ĐƠN GI&#193; RẺ</a>
+                    </li>
+                    <li>
+                        <a href="../thuc-don-mon-khac-sp-02a1241015103558713.html">Thực đơn m&#243;n kh&#225;c</a>
+                    </li>
+                    <li>
+                        <a href="../mon-soup-sp-d02702061616273326.html">M&#243;n soup</a>
+                    </li>
+                    <li>
+                        <a href="../com-gia-dinh-sp-5aef100518111748746.html">CƠM GIA Đ&#204;NH</a>
+                    </li>
+                    <li>
+                        <a href="../mon-ga-vit-sp-24cc020616162822862.html">M&#243;n g&#224; - vịt</a>
+                    </li>
+                    <li>
+                        <a href="../com-gia-dinh--sp-2d6a100518111906812.html">CƠM GIA Đ&#204;NH </a>
+                    </li>
+                    <li>
+                        <a href="../mon-heo-thit-rung-lai-sp-ea01020616162919684.html">M&#243;n heo - thịt rừng lai</a>
+                    </li>
+                    <li>
+                        <a href="../mon-bo-sp-7d2e020616163000284.html">M&#243;n b&#242;</a>
+                    </li>
+                    <li>
+                        <a href="../mon-tom-cua-sp-c7e0020616163026460.html">M&#243;n t&#244;m - cua</a>
+                    </li>
+                    <li>
+                        <a href="../mon-ca-luon-muc-sp-5973020616163107904.html">M&#243;n c&#225; - lươn - mực</a>
+                    </li>
+                    <li>
+                        <a href="../cac-mon-com-sp-9a23020616163827692.html">C&#225;c m&#243;n cơm</a>
+                    </li>
+                    <li>
+                        <a href="../cac-mon-lau-sp-6a98020616163850336.html">C&#225;c m&#243;n lẩu</a>
+                    </li>
+                    <li>
+                        <a href="../cac-mon-trang-mieng-sp-415c020616163913886.html">C&#225;c m&#243;n tr&#225;ng miệng</a>
+                    </li>
+                    <li>
+                        <a href="../cac-dich-vu-tiec-tron-goi-sp-4776070616104404480.html">C&#225;c dịch vụ tiệc trọn g&#243;i</a>
+                    </li>
+                <li>
+                    <a href="../thuc-don-tiec-nho-nhanh.html">Thực đơn tiệc nhỏ</a>
+                </li>
+
+        </ul>
+    </div>
+    <div class="banner" style="height:385px;overflow:hidden;">
+        <div class="panel panel-default distance-none border-none">
+            <div class="panel-heading left full">
+                <div class="col-lg-12">
+                    <p>
+                        <b>
+                            oops! File not found...
+                        </b>
+                        <small><a href="../index.html">Come back Home</a></small>
+                    </p>
+                </div>
+            </div>
+            <div class="panel-body distance-none border-none">
+                <div class="col-lg-12 distance-none border-none">
+                    <p>
+                        <img src="../Files/Images/error.jpg" style="width:100%;" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container wrapper">
+
+        <div class="left-banner">
+                <a href="http://tiectrongoi.vn/trang-chu.html">
+                    <img src="../Files/admin/19042018/baner-dung-flyfood.gif" />
+                </a>
+
+
+        </div>
+        <div class="right-banner">
+                <a href="../dang-ky-loc-xoay-happy-birthday-loc-coc-leng-keng-5-con-so-1-detail-fdb7020418135808910.html">
+                    <img src="../Files/admin/27042018/banner-phai.gif" />
+                </a>
+        </div>
+        
+
+
+        <section class="bottom-banner">
+                <a href="../ban-muon-dat-tiec-flyfood-cung-cap-mon-an-cuc-nhanh-detail-fe4d181215170131137.html">
+                    <img src="../Files/admin/02072016/Banner-flyfood-footer.png" />
+                </a>
+        </section>
+    </div>
+    <footer>
+        <section class="footer-top">
+            <div class="container wrapper distance-none">
+                <div class="panel panel-default distance-none">
+                    <div class="panel-heading">
+                        <h3 class="text-uppercase">Thông tin liên hệ</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                        <p><b class="text-uppercase">flyfood - quảng bá ẩm thực truyền thống việt nam!</b></p>
+                        <p><b><i class="fa fa-map-marker"></i> Trụ sở:</b> 7/3 Hồ Biểu Chánh, P.12, Q.Phú Nhuận, TP.HCM</p>
+                        <p><b><i class="fa fa-phone"></i>Hotline:</b> (028)39.911.911</p>
+                        <p><b><i class="fa fa-facebook"></i>Facebook:</b> <a href="http://facebook.com/flyfood.vn">facebook.com/flyfood.vn</a></p>
+                        <p><b><i class="fa fa-globe"></i>Website:</b> <a href="../index.html">flyfood.vn</a></p>
+                        <p><b><i class="fa fa-envelope-o"></i>Email:</b> flyfoodhcm@gmail.com</p>
+                        <p><b><i class="fa fa-skype"></i>Skype:</b> Flyfoodhcm</p>
+                    </div>
+                </div>
+                <div class="panel panel-default distance-none">
+                    <div class="panel-heading">
+                        <h3 class="text-uppercase">Tin nhanh</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                                    <li>
+            <a href="../mon-ngon-tang-me-detail-d55b100518111505677.html">
+                <h2>
+                    <i class="fa fa-circle"></i>M&#211;N NGON TẶNG MẸ
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../tuan-le-vang-flyfood-detail-6ead050518112206907.html">
+                <h2>
+                    <i class="fa fa-circle"></i>TUẦN LỄ V&#192;NG FLYFOOD
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../loc-xoay-happy-birthday-loc-coc-leng-keng-5-con-so-1-detail-d21f020518142619763.html">
+                <h2>
+                    <i class="fa fa-circle"></i>LỐC XO&#193;Y HAPPY BIRTHDAY - L&#243;c C&#243;c Leng Keng 5 Con Số 1
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../mon-them-vi-tiec-them-vui-detail-42c1270418094511524.html">
+                <h2>
+                    <i class="fa fa-circle"></i>M&#211;N TH&#202;M VỊ - TIỆC TH&#202;M VUI
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../3-vi-moi-cho-bo-ga-bo-xoi-flyfood-detail-6c792404181651000.html">
+                <h2>
+                    <i class="fa fa-circle"></i>3 VỊ MỚI CHO BỘ G&#192; B&#211; X&#212;I FLYFOOD
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../goi-mon-flyfood-an-le-gio-to-hung-vuong-hoanh-trang-detail-ed4719041809045558.html">
+                <h2>
+                    <i class="fa fa-circle"></i>GỌI M&#211;N FLYFOOD - ĂN LỄ GIỖ TỔ H&#217;NG VƯƠNG HO&#192;NH TR&#193;NG
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../dang-ky-loc-xoay-happy-birthday-loc-coc-leng-keng-5-con-so-1-detail-fdb7020418135808910.html">
+                <h2>
+                    <i class="fa fa-circle"></i>Đăng K&#253; LỐC XO&#193;Y HAPPY BIRTHDAY - L&#211;C C&#211;C LENG KENG 5 CON SỐ 1
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../flyfood-ket-ban-vung-xa-�%2580%2593-giam-15-detail-0794310318223335375.html">
+                <h2>
+                    <i class="fa fa-circle"></i>FLYFOOD - KẾT BẠN V&#217;NG XA – GIẢM 15%
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../loc-xoay-happy-birthday-loc-coc-leng-keng-5-con-so-1-detail-a87c310318100204428.html">
+                <h2>
+                    <i class="fa fa-circle"></i>LỐC XO&#193;Y HAPPY BIRTHDAY - L&#211;C C&#211;C LENG KENG 5 CON SỐ 1
+                </h2>
+            </a>
+        </li>
+        <li>
+            <a href="../cung-flyfood-lam-party-tai-gia-an-mung-le-phuc-sinh-hoanh-trang-detail-d2ea290318154500240.html">
+                <h2>
+                    <i class="fa fa-circle"></i>C&#217;NG FLYFOOD L&#192;M PARTY TẠI GIA - ĂN MỪNG LỄ PHỤC SINH HO&#192;NH TR&#193;NG
+                </h2>
+            </a>
+        </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default distance-none">
+                    <div class="panel-heading">
+                        <h3 class="text-uppercase">Facebook</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/flyfood.vn" data-width="100%" data-height="150px" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/flyfood.vn"><a href="https://www.facebook.com/flyfood.vn">Flyfood.vn</a></blockquote></div></div>
+                        <p style="margin-top:15px;">
+                            <a href="https://www.facebook.com/flyfood.vn" class="text-uppercase distance-none" style="color: #fd7605;font-weight:600;font-size:14px;">Kết nối với flyfood</a>
+                            <a href="https://www.facebook.com/flyfood.vn" target="_blank" class="btn btn-primary btn-circle btn-lg">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://plus.google.com/+FlyfoodVnMonNgonGiaoTanNha/posts" target="_blank" class="btn btn-danger btn-circle btn-lg">
+
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="https://twitter.com/flyfoodpdl" target="_blank" class="btn btn-info btn-circle btn-lg">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="container wrapper ">
+                <address class="left">
+                    <div class="footer-mobile">
+                        Hotline: <b>(028)39.911.911</b> 7:30 -20:00<br />
+                        Miễn phí giao hàng đơn hàng >=1.000.000đ<br />
+                    </div>
+                    Copyright © 2018 <a href="../index.html">flyfood.vn</a>. All rights reserved.
+                </address>
+                <ul class="list-inline right">
+                    <li>
+                        <a href="../chinh-sach-bao-mat-flyfood-detail-4ed3180116110956315.html">Chính sách bảo mật</a>
+                    </li>
+                    <li>
+                        <a href="../dieu-khoan-su-dung-website-flyfood-detail-28cf180116111951153.html">Điều khoản sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="../quy-trinh-huong-dan-dat-hang-online-tai-flyfoodvn-detail-81d1180116115450489.html">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li>
+                        <a href="../nhan-dien-thuong-hieu-flyfood-detail-86ef180116110049580.html">Nhận diện thương hiệu</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        
+        <a href="http://www.dmca.com/Protection/Status.aspx?ID=c85a7d53-b68c-48e8-b7a9-16e3e17df548" title="DMCA.com Protection Status" class="dmca-badge"> <img src="http://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=c85a7d53-b68c-48e8-b7a9-16e3e17df548" alt="DMCA.com Protection Status"></a>
+        <script src="http://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        
+    </footer>
+    <!-- Modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title text-center text-uppercase lead" id="modalLoginLabel">Đăng nhập</h3>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p id="modal-message">Vui lòng điền đầy đủ thông tin</p>
+                                <div class="row">
+<form action="http://flyfood.vn/DangNhap/_login?Length=8" data-ajax="true" data-ajax-failure="checkLogin" data-ajax-method="Post" data-ajax-success="checkLogin" enctype="multipart/form-data" id="_loginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="XebMqosPK_ApUXz9bvtlJsW5frFCISV_Rg64ZCvt5ek4_EMG8tDPmc5aksDFnJytsG1LMRyH0KY1h1YSJyOkrfJ8spKkwE-TCdnNR4tEmZA1" />                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-required="Vui lòng nhập Tên đăng nhập" id="UserName" name="UserName" placeholder="Tên đăng nhập" type="text" value="" />
+                                                </div>
+                                                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-required="Vui lòng nhập Mật khẩu" id="Password" name="Password" placeholder="Mật khẩu" type="password" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input data-val="true" data-val-required="The Ghi nhớ lần sau field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" /> Ghi nhớ lần sau
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button onclick="showMark();" type="submit" class="btn btn-sm flyfood-btn btn-block text-capitalize">
+                                                        <i class="fa fa-sign-in"></i>Đăng nhập
+                                                    </button>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <button type="button" onclick="checkLoginState();" class="btn btn-sm btn-primary btn-block text-uppercase"><i class="fa fa-facebook"></i>đăng nhập facebook</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" onclick="gpluslogin();" class="btn btn-sm btn-primary btn-social btn-danger btn-block text-uppercase"><i class="fa fa-google-plus"></i>đăng nhập g plus</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="none-margin">
+                                                    <a href="javascript:;" onclick="popupForgot();">
+                                                        <i class="fa fa-eye-slash"></i> Quên mật khẩu
+                                                    </a>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" class="btn-reg btn btn-sm btn-primary btn-block btn-danger text-capitalize">
+                                                    <i class="fa fa-edit"></i>Đăng ký
+                                                </button>
+                                            </div>
+                                        </div>
+</form>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var checkLogin = function (data) {
+        showMark();
+        if (data.result == 1) {
+            setTimeout(function () {
+               hideMark();
+            }, 500);
+            $('#modal-message').html(data.message);
+            setTimeout(function () {
+                location.reload();
+            }, 800);
+        } else {
+            setTimeout(function () {
+                hideMark();
+            }, 500);
+            $('#modal-message').html(data.message);
+        }
+       
+    }
+</script>
+
+    <!-- Modal -->
+<div class="modal fade" id="modalSingin" tabindex="-1" role="dialog" aria-labelledby="modalSinginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title text-center text-uppercase lead" id="modalSinginLabel">Đăng ký thành viên</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p id="modal-message-reg">Vui lòng điền đầy đủ thông tin</p>
+                                <div class="row">
+<form action="http://flyfood.vn/DangNhap/_register?Length=8" data-ajax="true" data-ajax-failure="checkLogin_reg" data-ajax-method="Post" data-ajax-success="checkLogin_reg" enctype="multipart/form-data" id="_singinForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="YMkqVRHnIWCvVp1ueet8Q39qaKch42mi8rUdjNhQ7rW1DlA20_f2KscMQtEltn3UufQ79xJMdY8Qt4FZLQ2jgd-EVqd__3kDbh7ueje7Jqk1" />                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-length="Chiều dài 1-50" data-val-length-max="50" data-val-regex="Tên đăng nhập phải là chữ hoặc số" data-val-regex-pattern="([a-zA-Z0-9 .&amp;&#39;-]+)" data-val-required="Vui lòng nhập tên đăng nhập" id="UserName" name="UserName" placeholder="Tên đăng nhập" type="text" value="" />
+                                                </div>
+                                                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-length="Chiều dài 8-50" data-val-length-max="50" data-val-length-min="8" data-val-required="Vui lòng nhập mật khẩu" id="Password" name="Password" placeholder="Mật khẩu" type="password" />
+                                                </div>
+                                                <span class="field-validation-valid" data-valmsg-for="FullName" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-length="Chiều dài 1-100" data-val-length-max="100" data-val-required="Vui lòng nhập họ tên" id="FullName" name="FullName" placeholder="Họ tên" type="text" value="" />
+                                                </div>
+                                                <span class="field-validation-valid" data-valmsg-for="GIOITINH" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-female"></i></span>
+                                                    <select class="form-control" data-val="true" data-val-required="Vui lòng chọn giới tính" id="GIOITINH" name="GIOITINH"><option value="">Chọn giới t&#237;nh</option>
+<option selected="selected" value="False">Nữ</option>
+<option value="True">Nam</option>
+</select>
+
+
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                <input class="form-control" data-val="true" data-val-length="Chiều dài 1-20" data-val-length-max="20" data-val-regex="Điện thoại không đúng định dạng" data-val-regex-pattern="^(0[1-9]{1}\d{8,9})$" data-val-required="Vui lòng nhập điện thoại" id="PhoneNumber" name="PhoneNumber" placeholder="Điện thoại" type="text" value="" />
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                <input class="form-control" data-val="true" data-val-regex="Email không đúng định dạng!" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" data-val-required="Vui lòng nhập Email" id="Email" name="Email" placeholder="Email" type="text" value="" />
+                                            </div>
+                                            <span class="field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span>
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                                                <input class="form-control" data-val="true" data-val-length="Chiều dài 1-200" data-val-length-max="200" id="Address" name="Address" placeholder="Địa chỉ" type="text" value="" />
+                                            </div>
+                                            <div class="form-group">
+                                                <button onclick="showMark();" type="submit" class="btn btn-sm btn-primary btn-block btn-danger text-capitalize">
+                                                    <i class="fa fa-edit"></i>Đăng ký
+                                                </button>
+                                            </div>
+                                        </div>
+</form>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var checkLogin_reg = function (data) {
+        $('form').submit(function () {
+            if (!$(this).valid()) {
+                hideMark();
+                return;
+            }
+        });
+        showMark();
+        if (data.result == 1) {
+            setTimeout(function () {
+                hideMark();
+            }, 500);
+            $('#modal-message-reg').html(data.message);
+            
+        } else {
+            setTimeout(function () {
+                hideMark();
+            }, 500);
+            $('#modal-message-reg').html(data.message);
+        }
+
+    }
+</script>
+
+    <!-- Modal -->
+<div class="modal fade" id="modalForgot" tabindex="-1" role="dialog" aria-labelledby="modalForgotLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title text-center text-uppercase lead" id="modalForgotLabel">Quên mật khẩu</h3>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p id="modal-message-forgot">Vui lòng điền đầy đủ thông tin</p>
+                                <div class="row">
+<form action="http://flyfood.vn/DangNhap/QuenMatKhau?Length=8" data-ajax="true" data-ajax-failure="forgotPass" data-ajax-method="Post" data-ajax-success="forgotPass" enctype="multipart/form-data" id="_forgotPassForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="tHpMBwfWSrLVZxhL5WZOojMVgArktaBt0evAdxT8XoF3dQPHLddEZbr0FIwF5qhyClKnExxfw9Is4v0bNKutGLBxvQskQkX3UeuH__pJ7i41" />                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-required="Vui lòng nhập Tên đăng nhập" id="UserName" name="UserName" placeholder="Tên đăng nhập" type="text" value="" />
+                                                </div>
+                                                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                                <div class="form-group input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                    <input class="form-control" data-val="true" data-val-regex="Email không đúng định dạng!" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" data-val-required="Vui lòng nhập Email" id="Email" name="Email" placeholder="Email đăng ký" type="text" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <button onclick="showMark();" type="submit" class="btn btn-sm flyfood-btn btn-block text-capitalize">
+                                                        <i class="fa fa-sign-in"></i>Xác nhận
+                                                    </button>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <button type="button" onclick="checkLoginState();" class="btn btn-sm btn-primary btn-block text-uppercase"><i class="fa fa-facebook"></i>đăng nhập facebook</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" onclick="gpluslogin();" class="btn btn-sm btn-primary btn-social btn-danger btn-block text-uppercase"><i class="fa fa-google-plus"></i>đăng nhập g plus</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" class="btn-reg btn btn-sm btn-primary btn-block btn-danger text-capitalize">
+                                                    <i class="fa fa-edit"></i>Đăng ký
+                                                </button>
+                                            </div>
+                                        </div>
+</form>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var forgotPass = function (data) {
+        showMark();
+        if (data.result == 1) {
+            setTimeout(function () {
+                hideMark();
+            }, 500);
+            $('#modal-message-forgot').html(data.message);
+            
+        } else {
+            setTimeout(function () {
+                hideMark();
+            }, 500);
+            $('#modal-message-forgot').html(data.message);
+        }
+
+    }
+</script>
+
+    <div id="social-share"></div>
+    <a id="linkTop" class="backtotop" href="javascript:;">
+        <span></span>
+    </a>
+    <script src="../Scripts/jquery-1.11.1.js"></script>
+
+    <script src="../Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="../Scripts/jquery.validate.js"></script>
+<script src="../Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="../Scripts/_references.js"></script>
+    <script src="../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../Scripts/owl.carousel.min.js"></script>
+    <script>
+        $(function () {
+            $('form').submit(function () {
+                if (!$(this).valid()) {
+                    hideMark();
+                    return false;
+                }
+            });
+            setInterval("heartBeat();", 1000 * 120); // 3phut gửi request một lần
+        });
+        function heartBeat() {
+            $.get("/KeepSession.ashx", function (data) { });
+        }
+    </script>
+    
+</body>
+</html>
